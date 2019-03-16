@@ -4,7 +4,7 @@ nCrの定義式から求める
 */
 
 using ll = long long;
-ll COM(int n, int k)
+ll COM(ll n, ll k)
 {
     if (k < 0 || n < k)
         return 0;
