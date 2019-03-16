@@ -1,3 +1,10 @@
+/*
+unite(x,y): 集合XとYを併合する. 併合済のときfalse,未併合のときtrueが返される
+connected(x,y): 要素x,yが同じ集合に属するならtrue,そうでないならfalse
+find(k): 要素kが属する集合を求める
+size(k): 要素kが属する集合の要素の数を求める
+各計算量 𝑂(α(𝑁))
+*/
 #include <vector>
 
 template <typename T>
