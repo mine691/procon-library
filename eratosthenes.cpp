@@ -1,4 +1,4 @@
-// order N*(log (log N))
+// 𝑂(𝑁*log(log 𝑁))
 vector<int> eratosthenes(int N)
 {
     vector<int> res;
