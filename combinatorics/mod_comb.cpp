@@ -30,3 +30,12 @@ long long COM(int n, int k)
         return 0;
     return fac[n] * (finv[k] * finv[n - k] % MOD) % MOD;
 }
+
+int main()
+{
+    // 前計算
+    COMinit();
+
+    // 計算例
+    cout << COM(100000, 50000) << endl;
+}
