@@ -1,11 +1,12 @@
+//order root N
 template <typename T>
-bool is_prime(T n)
+bool is_prime(T N)
 {
-    if (n < 2)
+    if (N < 2)
         return false;
-    for (T i = 2; i * i <= n; ++i)
+    for (T i = 2; i * i <= N; ++i)
     {
-        if (n % i == 0)
+        if (N % i == 0)
             return false;
     }
     return true;
