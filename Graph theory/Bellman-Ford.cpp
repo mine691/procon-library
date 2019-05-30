@@ -1,3 +1,6 @@
+#include <vector>
+#include <limits>
+
 template <typename T>
 vector<T> BellmanFrod(Edges<T> &edges, int N, int source)
 {
