@@ -1,6 +1,6 @@
 #include <vector>
 const long long mod = 1e9 + 7;
-//a partition of n by k-th number
+//a partition of n by k-th numbers
 
 template <typename T>
 vector<vector<T>> get_partition(int n, int k)
