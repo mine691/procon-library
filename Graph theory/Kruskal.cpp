@@ -1,5 +1,3 @@
-//need Union-find
-
 #include <algorithm>
 #include <vector>
 
@@ -7,7 +5,7 @@ template <typename T>
 T Kruskal(Edges<T> &edges, int V)
 {
     sort(edges.begin(), edges.end(), [](const edge<T> &a, const edge<T> &b) { return a.cost < b.cost; });
-    UnionFind<T> uf(V);
+    UnionFind uf(V);
     T res = 0;
     for (auto &e : edges)
     {
