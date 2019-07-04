@@ -22,3 +22,17 @@ void tomorrow(int &y, int &m, int &d) {
 
 //0埋め出力
 printf("%04d/%02d/%02d\n", Y, M, D);
+
+//日にちの前後 a < bならafter
+string after(int a[], int b[])
+{
+    string s[3] = {"after", "before", "equal"};
+    for (int i = 0; i < 3; i++)
+    {
+        if (a[i] < b[i])
+            return s[0];
+        else if (a[i] > b[i])
+            return s[1];
+    }
+    return s[2];
+}
