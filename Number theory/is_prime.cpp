@@ -1,4 +1,3 @@
-//𝑂(√𝑁)
 template <typename T>
 bool is_prime(T N)
 {
