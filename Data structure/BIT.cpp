@@ -27,3 +27,18 @@ struct BIT
         return sum(y - 1) - sum(x - 1);
     }
 };
+
+// p : permutation
+ll inversion(vector<int> p)
+{
+    int N = p.size();
+
+    BIT<int> bit(N + 1);
+    ll inv = 0;
+    for (int i = 0; i < N; i++)
+    {
+        inv += bit.getSum(p[i], N + 1);
+        bit.add(p[i], 1);
+    }
+    return inv;
+}
