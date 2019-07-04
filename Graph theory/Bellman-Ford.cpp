@@ -25,5 +25,6 @@ vector<T> BellmanFrod(Edges<T> &edges, int N, int source)
         if (dist[e.src] + e.cost < dist[e.to])
             return vector<T>();
     }
+    dist.push_back(INF);
     return dist;
 }
