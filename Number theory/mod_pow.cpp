@@ -1,9 +1,5 @@
-/*
-x^nのmodで割った余りを求める
-計算量 𝑂(log 𝑁)
-*/
-
 using ll = long long;
+const ll mod = 1e9 + 7;
 ll mod_pow(ll x, ll n, ll mod)
 {
     ll res = 1;
