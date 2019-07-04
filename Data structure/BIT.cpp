@@ -1,5 +1,5 @@
 #include <vector>
-// 0 - indexed
+// 1 - indexed
 template <typename T>
 struct BIT
 {
