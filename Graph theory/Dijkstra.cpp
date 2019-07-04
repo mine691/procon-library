@@ -30,5 +30,6 @@ vector<T> dijkstra(WeightedGraph<T> &g, int s)
             que.emplace(dist[e.to], e.to);
         }
     }
+    dist.push_back(INF);
     return dist;
 }
