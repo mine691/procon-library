@@ -7,7 +7,7 @@ T extgcd(T a, T b, T &x, T &y)
         x = 1, y = 0;
         return a;
     }
-    T d = extGCD(b, a % b, y, x);
+    T d = extgcd(b, a % b, y, x);
     y -= a / b * x;
     return d;
 }
