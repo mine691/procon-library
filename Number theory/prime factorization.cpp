@@ -1,5 +1,3 @@
-//どちらも𝑂(√𝑁)
-
 //map型
 #include <map>
 template <typename T>
