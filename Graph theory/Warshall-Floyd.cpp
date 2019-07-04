@@ -1,11 +1,9 @@
-#include <vector>
-#include <limits>
-
 //G[i][i] = 0 ; if G[i][i] < 0 -> G has negative cycles
+//check!!! INF
+
 template <typename T>
-void Warshall_Floyd(Matrix<T> &g)
+void Warshall_Floyd(Matrix<T> &g, T INF)
 {
-    ll INF = numeric_limits<T>::max();
     int N = g.size();
     for (int k = 0; k < N; k++)
     {
