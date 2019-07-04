@@ -1,14 +1,10 @@
-
 #include <vector>
 
 struct UnionFind
 {
     vector<int> data;
 
-    UnionFind(int sz)
-    {
-        data.assign(sz, -1);
-    }
+    UnionFind(int sz) : data(sz, -1) {}
 
     bool unite(int x, int y)
     {
