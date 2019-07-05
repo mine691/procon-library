@@ -21,11 +21,12 @@ struct Segmenttree
     void set(int k, const Monoid &x) { seg[k + sz] = x; }
     void build()
     {
-        for (int k = sz - 1; k > 0; k--)
+        for (int k = sz - 1; k >= 0; k--)
         {
             seg[k] = f(seg[2 * k + 1], seg[2 * k + 2]);
         }
     }
+
     void update(int k, const Monoid &x)
     {
         k += sz - 1;
