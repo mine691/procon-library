@@ -1,15 +1,7 @@
-/*
-mod付きcombination
-事前計算は 𝑂(𝑁)、各クエリに対して 𝑂(1), 
-*/
+using ll = long long;
+ll fac[MAX], finv[MAX], inv[MAX];
 
-const int MAX = 510000;
-const int MOD = 1000000007;
-
-long long fac[MAX], finv[MAX], inv[MAX];
-
-// 前処理
-void COMinit()
+void Comb_init()
 {
     fac[0] = fac[1] = 1;
     finv[0] = finv[1] = 1;
@@ -22,20 +14,11 @@ void COMinit()
     }
 }
 
-long long COM(int n, int k)
+long long Comb(int n, int k)
 {
     if (n < k)
         return 0;
     if (n < 0 || k < 0)
         return 0;
     return fac[n] * (finv[k] * finv[n - k] % MOD) % MOD;
-}
-
-int main()
-{
-    // 前計算
-    COMinit();
-
-    // 計算例
-    cout << COM(100000, 50000) << endl;
 }
