@@ -18,10 +18,10 @@ struct Segmenttree
         seg.assign(2 * sz - 1, e);
     }
 
-    void set(int k, const Monoid &x) { seg[k + sz] = x; }
+    void set(int k, const Monoid &x) { seg[k + sz - 1] = x; }
     void build()
     {
-        for (int k = sz - 1; k >= 0; k--)
+        for (int k = sz - 2; k >= 0; k--)
         {
             seg[k] = f(seg[2 * k + 1], seg[2 * k + 2]);
         }
