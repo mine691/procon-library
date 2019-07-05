@@ -1,9 +1,3 @@
-/*
-pascalの三角形を求める
-計算量は 𝑂(𝑁𝑟),見積もりとしては𝑂(𝑁²) 
-N<3000くらいならOK
-*/
-
 #include <vector>
 using ll = long long;
 vector<vector<ll>> get_combination(int N)
