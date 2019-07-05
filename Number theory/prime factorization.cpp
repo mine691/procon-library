@@ -1,4 +1,3 @@
-//map型
 #include <map>
 template <typename T>
 map<T, int> prime_factor(T n)
@@ -13,11 +12,10 @@ map<T, int> prime_factor(T n)
         }
     }
     if (n != 1)
-        res[n]++; //nは素数
+        res[n]++;
     return res;
 }
 
-//vactor型
 #include <vector>
 template <typename T>
 vector<T> prime_factor(T n)
@@ -32,6 +30,6 @@ vector<T> prime_factor(T n)
         }
     }
     if (n != 1)
-        res.push_back(n); //nは素数
+        res.push_back(n);
     return res;
 }
