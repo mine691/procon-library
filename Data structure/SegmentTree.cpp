@@ -10,7 +10,7 @@ struct Segmenttree
     vector<Monoid> seg;
 
     // size, operator, unit
-    Segmenttree(int N, const F f, const Monoid e) : f(f), e(e)
+    Segmenttree(int N, const F &f, const Monoid &e) : f(f), e(e)
     {
         sz = 1;
         while (sz < N)
