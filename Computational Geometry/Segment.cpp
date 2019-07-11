@@ -1,3 +1,4 @@
+//need Line
 struct Segment : Line
 {
     Segment() = default;
@@ -6,3 +7,8 @@ struct Segment : Line
 };
 
 using segments = vector<Segment>;
+
+Point CrossPoint(const Segment &s, const Segment &t)
+{
+    return CrossPoint(Line(s), Line(t));
+}
