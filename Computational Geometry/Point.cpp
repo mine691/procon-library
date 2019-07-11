@@ -87,3 +87,5 @@ ostream &operator<<(ostream &os, Point &p)
 {
     os << fixed << setprecision(10) << p.real() << " " << p.imag();
 }
+
+using Points = vector<Point>;
