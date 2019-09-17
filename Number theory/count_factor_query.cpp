@@ -14,7 +14,8 @@ void precalc()
         {
             for (int j = i; j < N; j += i)
             {
-                f[j] = i;
+                if (f[j] == 0)
+                    f[j] = i;
             }
         }
     }
