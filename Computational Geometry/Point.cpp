@@ -88,4 +88,9 @@ ostream &operator<<(ostream &os, Point &p)
     os << fixed << setprecision(10) << p.real() << " " << p.imag();
 }
 
+//get angle of two vectors (radian)
+Real get_angle(Point a, Point b){
+    return acos(dot(a, b) / (abs(a) * abs(b)));
+}
+
 using Points = vector<Point>;
