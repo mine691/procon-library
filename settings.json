@@ -1,0 +1,149 @@
+{
+    // エディターでスペースをドット(半角)や四角(全角)で表示する．
+    "editor.renderWhitespace": "none",
+    // エクスプローラーで表示するアイコンを拡張機能vscode-icons のものにする．
+    // 拡張機能Runner で，コマンドが押されたときに各言語で実行する.bat ファイルを指定する．
+    "runner.languageMap": {
+        "c": "C:/VisualCodeRunner/crun.bat",
+        "cpp": "C:/VisualCodeRunner/cpprun.bat"
+    },
+    // ファイルを最後の変更直後に自動セーブする．
+    "files.autoSave": "afterDelay",
+    // C/C++のコード補完で使うエンジンを既定のものにする．
+    "C_Cpp.autocomplete": "Default",
+    "window.zoomLevel": 0,
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": true,
+    "terminal.integrated.rendererType": "dom",
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "terminal.integrated.shell.linux": "",
+    "terminal.integrated.shell.osx": "",
+    "C_Cpp.updateChannel": "Insiders",
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "explorer.confirmDelete": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "fortran-ls.executablePath": "C:\\Users\\Rin\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\fortls.exe",
+    "workbench.sideBar.location": "left",
+    //Latex
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "ptex2pdf",
+            "command": "ptex2pdf",
+            "args": [
+                "-l",
+                "-ot",
+                "-kanji=utf8 -synctex=1",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "ptex2pdf (uplatex)",
+            "command": "ptex2pdf",
+            "args": [
+                "-l",
+                "-u",
+                "-ot",
+                "-kanji=utf8 -synctex=1",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "pbibtex",
+            "command": "pbibtex",
+            "args": [
+                "-kanji=utf8",
+                "%DOCFILE%"
+            ]
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk",
+            "tools": [
+                "latexmk"
+            ]
+        },
+        {
+            "name": "pdflatex*2",
+            "tools": [
+                "pdflatex",
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "pdflatex -> bibtex -> pdflatex*2",
+            "tools": [
+                "pdflatex",
+                "bibtex",
+                "pdflatex",
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "ptex2pdf*2",
+            "tools": [
+                "ptex2pdf",
+                "ptex2pdf"
+            ]
+        },
+        {
+            "name": "ptex2pdf -> pbibtex -> ptex2pdf*2",
+            "tools": [
+                "ptex2pdf",
+                "pbibtex",
+                "ptex2pdf",
+                "ptex2pdf"
+            ]
+        },
+        {
+            "name": "ptex2pdf (uplatex) *2",
+            "tools": [
+                "ptex2pdf (uplatex)",
+                "ptex2pdf (uplatex)"
+            ]
+        },
+        {
+            "name": "ptex2pdf (uplatex) -> pbibtex -> ptex2pdf (uplatex) *2",
+            "tools": [
+                "ptex2pdf (uplatex)",
+                "pbibtex",
+                "ptex2pdf (uplatex)",
+                "ptex2pdf (uplatex)"
+            ]
+        },
+    ],
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "extensions.ignoreRecommendations": true,
+}
