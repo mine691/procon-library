@@ -55,7 +55,7 @@ struct ModInt
 
     ModInt &operator/=(const ModInt &p)
     {
-        *this *= p.inverse();
+        *this *= p.inv();
         return *this;
     }
 
