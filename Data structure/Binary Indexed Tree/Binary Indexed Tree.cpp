@@ -2,10 +2,6 @@
 #include <vector>
 using namespace std;
 
-// やること
-// 区間addできるようにする
-// 2D化
-
 // 1 - indexed
 template <typename T>
 struct BIT
