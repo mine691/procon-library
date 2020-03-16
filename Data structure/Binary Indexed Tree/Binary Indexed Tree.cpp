@@ -30,6 +30,30 @@ struct BIT
 	{
 		return sum(y - 1) - sum(x - 1);
 	}
+
+	// find an index i s.t. a[1] + a[2] + ⋯ + a[x] ≧ w
+	T lower_bound(T w)
+	{
+		if (w <= 0)
+			return 0;
+
+		T x = 0;
+		int p = 1, N = bit.size();
+
+		while (2 * p <= N)
+			p *= 2;
+
+		for (T k = p; k > 0; k /= 2)
+		{
+			if (x + k <= N && bit[x + k] < w)
+			{
+				w -= bit[x + k];
+				x += k;
+			}
+		}
+
+		return x + 1;
+	}
 };
 
 using ll = long long;
