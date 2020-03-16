@@ -12,3 +12,8 @@ BITの長さをNとする。
 | add(int k, T w) | 第k項にwを加える　| O(log N) |
 | getSum(int x, int y) | 半開区間[x,y)の和を返す | O(log N) |
 | inversion(vector<int> p) | 順列pの転倒数を返す | O(log N) |
+
+# To do
+・区間更新  
+・2D化BIT  
+・二分探索(lower_bound)  
