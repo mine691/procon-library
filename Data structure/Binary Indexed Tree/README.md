@@ -30,3 +30,9 @@ lower_boundを使えばいい。([AC code](https://atcoder.jp/contests/arc033/su
 # To do
 ・区間更新  
 ・2D化BIT  
+
+https://codeforces.com/contest/986/problem/B (転倒数)   
+https://codeforces.com/contest/1268/problem/C (2D)  
+https://codeforces.com/contest/459/problem/D (転倒数)  
+https://codeforces.com/contest/846/problem/D (2D)  
+https://codeforces.com/contest/341/problem/D (2D)  
