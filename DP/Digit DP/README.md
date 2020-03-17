@@ -17,6 +17,10 @@ dp[dgt][d][isless] := 上位dgt桁目まで確定していて、4または9を�
 dp[dgt][last][isless] := 上位dgt桁目まで確定していて、最後の文字がlastで、10^N-1未満かどうかがislessである場合の数  
 islessはいらないが、桁DPであることを意識するためにつけた。[AC code](https://yukicoder.me/submissions/445173)  
 
+・[Codeforces Round #549 B. Nirvana](https://codeforces.com/contest/1143/problem/B)  
+dp[digit][isless] := 上位digit桁目まで決まっていて、N未満かどうかがislessであるときの最大値  
+初期条件に注意する。([AC code](https://codeforces.com/contest/1143/submission/73497777))
+
 # To do
 https://codeforces.com/problemset/problem/1245/F  
 https://codeforces.com/problemset/problem/1036/C  
