@@ -25,7 +25,10 @@ lower_boundは負の要素があると上手く作動しない。
 この問題は、それぞれの小文字に対応した26個のBITを持って、区間[l,r]の正の和の個数を調べればいい。([AC code](https://codeforces.com/contest/1234/submission/73413137))  
 
 ・[AtCoder ARC033-C データ構造](https://atcoder.jp/contests/arc033/tasks/arc033_3)  
-lower_boundを使えばいい。([AC code](https://atcoder.jp/contests/arc033/submissions/10947418))
+lower_boundを使えばいい。([AC code](https://atcoder.jp/contests/arc033/submissions/10947418))  
+
+・[yukicoder No.742 にゃんにゃんにゃん 猫の挨拶](https://yukicoder.me/problems/no/742)  
+転倒数を出力する。([AC code](https://yukicoder.me/submissions/445086))
 
 # To do
 ・区間更新  
