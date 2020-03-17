@@ -23,7 +23,9 @@ https://atcoder.jp/contests/abc126/tasks/abc126_e
 
 # To do
 Verify  
-典型テクを書く（逆順に見るなど）  
-undo可能UF  
+典型テクを書く 
+undo可能UF(Dynamic connectivity	)  
 weighted-UF  
-半永続化/永続化
+半永続化/永続化  
+二部グラフ判定  
+実装についての説明
