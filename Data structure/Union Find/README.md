@@ -28,4 +28,5 @@ undo可能UF(Dynamic connectivity	)
 weighted-UF  
 半永続化/永続化  
 二部グラフ判定  
-実装についての説明
+実装についての説明  
+閉路判定もできる(クラスカル法)
