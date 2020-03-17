@@ -12,5 +12,18 @@ Union Find ( Disjoint Set Union とも言われている, 以下 UF )は、互�
 | get_set(int x) | x の属している集合の要素を列挙する (sortはされていない) | O(( x と同じ集合に属している要素数)) |
 
 # 例
+https://codeforces.com/contest/1253/problem/D  
+https://codeforces.com/contest/500/problem/B  
+https://codeforces.com/contest/25/problem/D  
+https://atcoder.jp/contests/abc157/tasks/abc157_d  
+https://codeforces.com/contest/1012/problem/B  
+https://codeforces.com/contest/1209/problem/D  
+https://atcoder.jp/contests/abc120/tasks/abc120_d  
+https://atcoder.jp/contests/abc126/tasks/abc126_e
 
 # To do
+Verify  
+典型テクを書く（逆順に見るなど）  
+undo可能UF  
+weighted-UF  
+半永続化/永続化
