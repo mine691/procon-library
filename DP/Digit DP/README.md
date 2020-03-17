@@ -13,9 +13,9 @@ dp[i][j][isless] := 上からi桁まで見たとき状態jであって、Kと比
 ・[AC ABC007-D 禁止された数字](https://atcoder.jp/contests/abc007/tasks/abc007_4)  
 dp[dgt][d][isless] := 上位dgt桁目まで確定していて、4または9を含むかのフラグがdで、K未満かどうかがislessである場合の数
 
-・[yukicoder No.741 AscNumber(Easy)](https://yukicoder.me/problems/no/741)
+・[yukicoder No.741 AscNumber(Easy)](https://yukicoder.me/problems/no/741)  
 dp[dgt][last][isless] := 上位dgt桁目まで確定していて、最後の文字がlastで、10^N-1未満かどうかがislessである場合の数  
-islessはいらないが、桁DPであることを意識するためにつけた。[AC code](https://yukicoder.me/submissions/445173)  
+islessはいらないが、桁DPであることを意識するためにつけた。([AC code](https://yukicoder.me/submissions/445173))  
 
 ・[Codeforces Round #549 B. Nirvana](https://codeforces.com/contest/1143/problem/B)  
 dp[digit][isless] := 上位digit桁目まで決まっていて、N未満かどうかがislessであるときの最大値  
