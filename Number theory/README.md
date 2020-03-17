@@ -14,4 +14,8 @@ Tonelli-Shanks
 畳み込みまとめ  
 Stern–Brocot tree  
 各種の篩法  
-乗法的関数の和
+乗法的関数の和  
+乱択で原始根  
+osa_k法  
+Berlekamp-Massey  
+
