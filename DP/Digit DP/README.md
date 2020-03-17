@@ -12,3 +12,11 @@ dp[i][j][isless] := 上からi桁まで見たとき状態jであって、Kと比
 
 ・[AC ABC007-D 禁止された数字](https://atcoder.jp/contests/abc007/tasks/abc007_4)  
 dp[dgt][d][isless] := 上位dgt桁目まで確定していて、4または9を含むかのフラグがdで、K未満かどうかがislessである場合の数
+
+# To do
+https://codeforces.com/problemset/problem/1245/F  
+https://yukicoder.me/problems/no/741  
+https://codeforces.com/problemset/problem/1036/C  
+https://codeforces.com/problemset/problem/1143/B  
+https://atcoder.jp/contests/abc129/tasks/abc129_e  
+https://codeforces.com/contest/914/problem/C
