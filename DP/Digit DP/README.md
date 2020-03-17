@@ -6,3 +6,6 @@ dp[i][j][isless] := 上からi桁まで見たとき状態jであって、Kと比
 遷移に癖があるので、詳細はコードを参照してほしい。
 
 # 例
+・[EDPC-S Digit Sum](https://atcoder.jp/contests/dp/tasks/dp_s)
+1以上K以下の整数のうち、各桁の総和がDの倍数であるようなものの個数を求める。  
+状態として「総和 mod D」を持つと、O(N log K)でできる。(桁数をNとすればO(NK))  
