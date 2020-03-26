@@ -45,6 +45,17 @@ struct Segmenttree
 		}
 	}
 
+	void add(int k, const Monoid &x)
+	{
+		k += sz - 1;
+		seg[k] = f(x, seg[k]);
+		while (k > 0)
+		{
+			k = (k - 1) / 2;
+			seg[k] = f(seg[k * 2 + 1], seg[k * 2 + 2]);
+		}
+	}
+
 	Monoid sub_query(int a, int b, int k, int l, int r)
 	{
 		if (r <= a || b <= l)
@@ -86,20 +97,20 @@ int main()
 	{
 		int f;
 		cin >> f;
+
+		if (f == 0)
+		{
+			int i, a;
+			cin >> i >> a;
+			i--;
+			seg.add(i, a);
+		}
 		if (f == 1)
 		{
 			int l, r;
 			cin >> l >> r;
 			l--, r--;
 			cout << seg.query(l, r + 1) << "\n";
-		}
-		if (f == 0)
-		{
-			int i, add;
-			cin >> i >> add;
-			i--;
-			add += seg[i];
-			seg.update(i, add);
 		}
 	}
 }
