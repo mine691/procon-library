@@ -9,3 +9,7 @@ https://codeforces.com/contest/1312/problem/D ([AC code](https://codeforces.com/
 
 # Binomial 
 Binom(n, r) を O(r) で求める。
+
+# Pascal
+パスカルの三角形を使って、二項係数のテーブルをつくる。  
+前計算O(N^2)クエリO(1)
