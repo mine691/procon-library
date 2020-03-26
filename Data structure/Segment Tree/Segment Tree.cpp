@@ -1,6 +1,8 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <functional>
 using namespace std;
-const int inf = (1 << 30) - 1;
+const int inf = (1LL << 31) - 1;
 
 // 0 - indexed
 template <typename Monoid>
@@ -66,13 +68,38 @@ struct Segmenttree
 
 	Monoid operator[](const int &k) const
 	{
-		return seg[k + sz];
+		return seg[k + sz - 1];
 	}
 };
 
+auto Range_Minimum_Query = [](int a, int b) { return min(a, b); }; // unit = inf
+auto Range_Maximum_Query = [](int a, int b) { return max(a, b); }; // unit = -inf
+auto Range_Sum_Query = [](int a, int b) { return a + b; };		   // unit = 0
+
 int main()
 {
-    int N, Q;
-    scanf("%d %d", &N, &Q);
-    Segmenttree<int> seg(N, [](int a, int b) { return min(a, b); }, inf);
+	int N, Q;
+	cin >> N >> Q;
+	Segmenttree<int> seg(N, Range_Sum_Query, 0);
+
+	while (Q--)
+	{
+		int f;
+		cin >> f;
+		if (f == 1)
+		{
+			int l, r;
+			cin >> l >> r;
+			l--, r--;
+			cout << seg.query(l, r + 1) << "\n";
+		}
+		if (f == 0)
+		{
+			int i, add;
+			cin >> i >> add;
+			i--;
+			add += seg[i];
+			seg.update(i, add);
+		}
+	}
 }
