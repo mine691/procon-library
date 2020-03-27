@@ -4,7 +4,8 @@ using ll = long long;
 const int mod = 1e9 + 7;
 const int inf = (1 << 30) - 1;
 const ll infll = (1LL << 61) - 1;
-#define fast() cin.tie(0), ios::sync_with_stdio(false)
+#define fast() ios::sync_with_stdio(false), cin.tie(0), cout.tie(0)
+#define digit(N) cout << fixed << setprecision((N))
 
 template <int mod>
 struct ModInt
@@ -30,8 +31,8 @@ struct ModInt
     ModInt operator--() const { return ModInt(*this) -= 1; }
 
     bool operator==(const ModInt &p) const { return x == p.x; }
-
     bool operator!=(const ModInt &p) const { return x != p.x; }
+    bool operator<(const ModInt &p) const { return x < p.x; }
 
     ModInt &operator+=(const ModInt &p)
     {
@@ -98,4 +99,7 @@ struct ModInt
     }
 };
 
-using mint = ModInt<mod>;
+const int64_t mod1 = 1000000007;
+const int64_t mod2 = 998244353;
+
+using mint = ModInt<mod1>;
