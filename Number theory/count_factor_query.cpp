@@ -2,6 +2,7 @@
 N以下の整数の素因数の個数のクエリを前計算O(NloglogN),クエリO(1)で求める
 omegaを累積すると階乗や順列の場合も求められる
 */
+using ll = long long;
 
 ll f[5000010], omega[5000010];
 int N = 5000001, Q;
