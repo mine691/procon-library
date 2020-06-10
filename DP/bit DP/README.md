@@ -21,3 +21,7 @@ S \union T は S | T
 dp[S][v] := 最後に頂点 v に到達した時, {0,1,2,…,n-1} の部分集合 S を巡回する最短距離。
 
 再帰で書くといい。
+
+# 例題
+https://yukicoder.me/problems/no/698 (https://yukicoder.me/submissions/494828)
+
